@@ -1,0 +1,478 @@
+/* ======================================================
+   Global Reset & Base Styles
+====================================================== */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Vazirmatn", sans-serif;
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+	scroll-behavior: smooth;
+}
+
+/* ======================================================
+   Layout Utilities
+====================================================== */
+
+.container {
+	max-width: 1440px;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0 1rem;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	gap: 5px;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-content {
+	margin: 10px;
+}
+
+/* ======================================================
+   Header
+====================================================== */
+
+#header {
+	height: 50px;
+	background-color: #12a1b4;
+}
+
+/* ======================================================
+   Main Content Layout
+====================================================== */
+
+#main-content {
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	gap: 10px;
+}
+
+/* ======================================================
+   Account Section
+====================================================== */
+
+.account {
+	width: 100%;
+	height: 520px;
+	padding: 24px 19px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	border-radius: 20px;
+	background-color: #f7f7f7;
+}
+
+/* ---------- Account Info ---------- */
+
+.account-info {
+	height: 56px;
+
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	gap: 12px;
+}
+
+.account-info__user--icon {
+	padding: 12px;
+	border-radius: 12px;
+	background-color: #fff;
+}
+
+.account-info__main {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 8px;
+}
+
+.account-info__name span {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.account-info__phone-number span {
+	font-size: 1.4rem;
+	color: #8e8e8e;
+}
+
+.account-line {
+	width: 100%;
+	display: inline-block;
+	border: 1.5px solid #e6e6e6;
+}
+
+/* ---------- Account Menu ---------- */
+
+.account-menu__items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 24px;
+}
+
+.account-menu__item {
+	width: 100%;
+	padding: 12px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 12px;
+}
+
+.account-menu__item:nth-of-type(3) {
+	justify-content: space-between;
+}
+
+.account-menu__item .flex-center {
+	gap: 12px;
+}
+
+.account-menu__item span {
+	font-size: 1.4rem;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.account-menu__item:hover {
+	cursor: pointer;
+	border-radius: 44px;
+	background-color: #e6e6e6;
+}
+
+/* Active / Selected Item */
+.slected-item {
+	color: white;
+	overflow: hidden;
+	border-radius: 44px;
+	background-color: #2f0d0c !important;
+}
+
+/* Badge */
+.account-menu__item--badge {
+	width: 28px;
+	height: 28px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 24px;
+	background-color: #cc312d;
+	color: white;
+}
+
+.account-menu__item--badge span {
+	align-self: center;
+}
+
+/* ======================================================
+   Order Section
+====================================================== */
+
+.order {
+	width: 100%;
+	max-height: 720px;
+	overflow: hidden;
+}
+
+/* ---------- Order Status Dashboard ---------- */
+
+.order-status-dashboard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-bottom: 8px;
+}
+
+.order-status-box {
+	height: 84px;
+	padding: 10px 20px;
+	flex: 0 0 222px;
+
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+
+	border-radius: 16px;
+	border: 1px solid #ebebeb;
+	scroll-behavior: smooth;
+}
+
+.order-status-box__info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+
+	font-weight: 600;
+}
+
+.order-status-box__title span {
+	font-size: 1.4rem;
+	color: #494a48;
+}
+
+.order-status-box__description {
+	font-size: 1.6rem;
+}
+
+.order-status-box__icon {
+	width: 56px;
+	height: 56px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 11px;
+}
+
+/* Status Colors */
+.status-processing .order-status-box__icon {
+	background-color: #448cf91a;
+}
+
+.status-delivered .order-status-box__icon {
+	background-color: #1bac441a;
+}
+
+.status-returns .order-status-box__icon {
+	background-color: #1717171a;
+}
+
+.status-canceled .order-status-box__icon {
+	background-color: #e5303f1a;
+}
+
+.order-status-box:hover {
+	cursor: pointer;
+	border: 1px solid #cc312d;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================================================
+   Order List
+====================================================== */
+
+.order .order-line {
+	width: 100%;
+	margin: 15px 0;
+}
+
+.order-list {
+	padding: 24px;
+	border-radius: 16px;
+	border: 2px solid #ebebeb;
+}
+
+.order-listest {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 25px;
+}
+
+/* ---------- Order Card ---------- */
+
+.order-card__details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.order-card__details--status {
+	padding: 8px 14px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+
+	border-radius: 40px;
+	background-color: #448cf91a;
+}
+
+.order-card__details--status span {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #2e7af1;
+}
+
+.order-card__details--info {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+}
+
+.order-info__code,
+.order-info__delivery-date,
+.order-info__price {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 6px;
+}
+
+.order-info__price {
+	justify-self: end;
+}
+
+.order-info__label {
+	color: #606060;
+}
+
+.order-info__label,
+.order-info__value {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.order-line {
+	width: 100%;
+	display: inline-block;
+	border: 1.5px solid #e6e6e6;
+}
+
+/* ---------- Products ---------- */
+
+.order-card__products {
+	padding: 16px;
+
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 1fr;
+
+	border-radius: 16px;
+	background-color: #f7f7f7;
+}
+
+.order-card__product--imag {
+	display: flex;
+}
+
+.order-card__product--info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 11px;
+
+	color: #cc312d;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+.product-item {
+	width: 72px;
+	height: 72px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 12px;
+	border: 4px solid #f7f7f7;
+	background-color: #ffffff;
+
+	position: relative;
+}
+
+.product-item__image {
+	width: 40px;
+	height: 40px;
+}
+
+.product-item__icon {
+	display: none;
+}
+
+/* ======================================================
+   Footer
+====================================================== */
+
+#footer {
+	height: 50px;
+	background-color: #660cb9;
+}
+
+/* ======================================================
+   Responsive (Tablet & Up)
+====================================================== */
+
+@media screen and (min-width: 768px) {
+	#main-content {
+		grid-template-columns: 310px 1fr;
+		grid-template-rows: auto;
+	}
+
+	.order-status-box {
+		flex: 0 0 233px;
+	}
+
+	.order-card__details--info {
+		grid-template-columns: auto auto 1fr;
+		grid-template-rows: 1fr;
+		gap: 27px;
+	}
+
+	.product-item {
+		border: none;
+	}
+
+	.product-item__icon {
+		width: 20px;
+		height: 20px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		border-radius: 18px;
+		background-color: #eae7e7;
+		border: 1px solid #2f0d0c;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.order-card__product--imag {
+		gap: 24px;
+	}
+}

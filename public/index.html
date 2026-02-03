@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/fonts/Vazirmatn-font-face.css" />
+		<link rel="stylesheet" href="/src/css/main.css" />
+		<title>Task-Two</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- <header id="header"></header> -->
+			<main id="main-content">
+				<section class="account">
+					<div class="account-info">
+						<div class="account-info__user--icon">
+							<img src="/src/svg/User.svg" alt="user-icon" />
+						</div>
+						<div class="account-info__main">
+							<div class="account-info__name">
+								<span>محسن فاخری اقدم</span>
+							</div>
+							<div class="account-info__phone-number">
+								<span>09123456789</span>
+							</div>
+						</div>
+						<div class="account-info__edit--icon">
+							<img src="/src/svg/Pen 3.svg" alt="edit-icon" />
+						</div>
+					</div>
+					<span class="account-line"></span>
+					<div class="account-menu">
+						<ul class="account-menu__items">
+							<li class="account-menu__item slected-item">
+								<img src="/src/svg/home.svg" alt="home-icon" />
+								<span>شفارش های من</span>
+							</li>
+							<li class="account-menu__item">
+								<img src="/src/svg/user-info.svg" alt="user-info icon" />
+								<span>اطلاعات حساب کاربری</span>
+							</li>
+							<li class="account-menu__item">
+								<div class="flex-center">
+									<img src="/src/svg/notif.svg" alt="notif" />
+									<span>پیام ها</span>
+								</div>
+								<div class="account-menu__item--badge">
+									<span>3</span>
+								</div>
+							</li>
+							<li class="account-menu__item">
+								<img src="/src/svg/review.svg" alt="review-icon" />
+								<span>نظرات من</span>
+							</li>
+							<li class="account-menu__item">
+								<img src="/src/svg/exit.svg" alt="settings-icon" />
+								<span>خروج از حساب کاربری</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="order">
+					<div class="order-status-dashboard">
+						<div class="order-status-box status-processing">
+							<div class="order-status-box__icon">
+								<img src="/src/svg/Time Circle.svg" alt="processing-icon" />
+							</div>
+							<div class="order-status-box__info">
+								<div class="order-status-box__title">
+									<span>در حال پردازش</span>
+								</div>
+								<div class="order-status-box__description">
+									<span>5</span>
+									<span>سفارش</span>
+								</div>
+							</div>
+						</div>
+						<div class="order-status-box status-delivered">
+							<div class="order-status-box__icon">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12.7167" cy="12.7167" r="11.6667" stroke="#0CAF3A" stroke-width="2.1" />
+									<path d="M8.63354 13.3L10.9669 15.6333L16.8002 9.79999" stroke="#0CAF3A" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="order-status-box__info">
+								<div class="order-status-box__title">
+									<span>تحویل شده</span>
+								</div>
+								<div class="order-status-box__description">
+									<span>4</span>
+									<span>سفارش</span>
+								</div>
+							</div>
+						</div>
+						<div class="order-status-box status-returns">
+							<div class="order-status-box__icon">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0 12.5417C0 5.6151 5.6151 0 12.5417 0C19.4682 0 25.0833 5.6151 25.0833 12.5417C25.0833 19.4682 19.4682 25.0833 12.5417 25.0833C5.6151 25.0833 0 19.4682 0 12.5417ZM12.5417 1.75C6.58159 1.75 1.75 6.58159 1.75 12.5417C1.75 18.5017 6.58159 23.3333 12.5417 23.3333C18.5017 23.3333 23.3333 18.5017 23.3333 12.5417C23.3333 6.58159 18.5017 1.75 12.5417 1.75ZM9.2475 9.91667L10.1872 9.12888C10.5575 8.81841 10.606 8.26652 10.2955 7.89619C9.98506 7.52587 9.43317 7.47735 9.06285 7.78782L7.01269 9.50663C6.61936 9.83634 6.42071 10.3063 6.41678 10.7777C6.4167 10.7823 6.41667 10.787 6.41667 10.7917C6.41667 10.7961 6.4167 10.8005 6.41677 10.805C6.42034 11.2768 6.61897 11.7473 7.01269 12.0772L9.06294 13.7956C9.43331 14.106 9.9852 14.0574 10.2956 13.6871C10.606 13.3167 10.5574 12.7648 10.1871 12.4544L9.24718 11.6667H14.5833C15.7109 11.6667 16.625 12.5808 16.625 13.7083C16.625 14.8359 15.7109 15.75 14.5833 15.75H12.25C11.7668 15.75 11.375 16.1418 11.375 16.625C11.375 17.1082 11.7668 17.5 12.25 17.5H14.5833C16.6774 17.5 18.375 15.8024 18.375 13.7083C18.375 11.6143 16.6774 9.91667 14.5833 9.91667H9.2475Z"
+										fill="#14151B"
+									/>
+								</svg>
+							</div>
+							<div class="order-status-box__info">
+								<div class="order-status-box__title">
+									<span>مرجوعی</span>
+								</div>
+								<div class="order-status-box__description">
+									<span>2</span>
+									<span>سفارش</span>
+								</div>
+							</div>
+						</div>
+						<div class="order-status-box status-canceled">
+							<div class="order-status-box__icon">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12.5417" cy="12.5417" r="11.6667" stroke="#ED4545" stroke-width="1.75" />
+									<path d="M15.4583 9.62502L9.625 15.4583M9.62498 9.625L15.4583 15.4583" stroke="#ED4545" stroke-width="1.75" stroke-linecap="round" />
+								</svg>
+							</div>
+							<div class="order-status-box__info">
+								<div class="order-status-box__title">
+									<span>لغو شده</span>
+								</div>
+								<div class="order-status-box__description">
+									<span>3</span>
+									<span>سفارش</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="order-line"></div>
+
+					<div class="order-listest">
+						<div class="order-list">
+							<div class="order-card__details">
+								<div class="order-card__details--status">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12.5417" cy="12.5417" r="11.6667" stroke="#2E7AF1" stroke-width="1.75" />
+										<path d="M12.5416 7.875V12.2295C12.5416 12.4245 12.6391 12.6067 12.8014 12.7148L16.0416 14.875" stroke="#2E7AF1" stroke-width="1.75" stroke-linecap="round" />
+									</svg>
+
+									<span>در حال پردازش</span>
+								</div>
+								<div class="order-card__details--info">
+									<div class="order-info__code">
+										<div class="order-info__label">کد سفارش:</div>
+										<div class="order-info__value">۲۱۶۵۴۴۹</div>
+									</div>
+									<div class="order-info__delivery-date">
+										<div class="order-info__label">تاریخ تحویل:</div>
+										<div class="order-info__value">۱۴۰۳/۰۵/۰۷</div>
+									</div>
+									<div class="order-info__price">
+										<div class="order-info__value">۱,۵۵۰,۰۰۰ تومان</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-line"></div>
+
+							<div class="order-card__products">
+								<div class="order-card__product--imag">
+									<div class="product-item">
+										<img src="/src/img/product 1.png" alt="عطر اول" class="product-item__image" />
+										<div class="product-item__icon">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="product-item">
+										<img src="/src/img/product 2.png" alt="عطر دوم" class="product-item__image" />
+										<div class="product-item__icon">
+											<span>2</span>
+										</div>
+									</div>
+									<div class="product-item">
+										<img src="/src/img/product 3.png" alt="عطر سوم" class="product-item__image" />
+										<div class="product-item__icon"><span>3</span></div>
+									</div>
+								</div>
+
+								<div class="order-card__product--info">
+									<span>جزئیات سفارش</span>
+									<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M6.06694 0.183058C6.31102 0.427136 6.31102 0.822864 6.06694 1.06694L2.13388 5H13.9583C14.3035 5 14.5833 5.27982 14.5833 5.625C14.5833 5.97018 14.3035 6.25 13.9583 6.25H2.13388L6.06694 10.1831C6.31102 10.4271 6.31102 10.8229 6.06694 11.0669C5.82286 11.311 5.42714 11.311 5.18306 11.0669L0.183058 6.06694C-0.0610194 5.82286 -0.0610194 5.42714 0.183058 5.18306L5.18306 0.183058C5.42714 -0.0610194 5.82286 -0.0610194 6.06694 0.183058Z"
+											fill="#CC312D"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="order-list">
+							<div class="order-card__details">
+								<div class="order-card__details--status">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12.5417" cy="12.5417" r="11.6667" stroke="#2E7AF1" stroke-width="1.75" />
+										<path d="M12.5416 7.875V12.2295C12.5416 12.4245 12.6391 12.6067 12.8014 12.7148L16.0416 14.875" stroke="#2E7AF1" stroke-width="1.75" stroke-linecap="round" />
+									</svg>
+
+									<span>در حال پردازش</span>
+								</div>
+								<div class="order-card__details--info">
+									<div class="order-info__code">
+										<div class="order-info__label">کد سفارش:</div>
+										<div class="order-info__value">۲۱۶۵۴۴۹</div>
+									</div>
+									<div class="order-info__delivery-date">
+										<div class="order-info__label">تاریخ تحویل:</div>
+										<div class="order-info__value">۱۴۰۳/۰۵/۰۷</div>
+									</div>
+									<div class="order-info__price">
+										<div class="order-info__value">۱,۵۵۰,۰۰۰ تومان</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-line"></div>
+
+							<div class="order-card__products">
+								<div class="order-card__product--imag">
+									<div class="product-item">
+										<img src="/src/img/product 1.png" alt="عطر اول" class="product-item__image" />
+										<div class="product-item__icon">
+											<span>1</span>
+										</div>
+									</div>
+									<div class="product-item">
+										<img src="/src/img/product 2.png" alt="عطر دوم" class="product-item__image" />
+										<div class="product-item__icon">
+											<span>2</span>
+										</div>
+									</div>
+									<div class="product-item">
+										<img src="/src/img/product 3.png" alt="عطر سوم" class="product-item__image" />
+										<div class="product-item__icon"><span>3</span></div>
+									</div>
+								</div>
+
+								<div class="order-card__product--info">
+									<span>جزئیات سفارش</span>
+									<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M6.06694 0.183058C6.31102 0.427136 6.31102 0.822864 6.06694 1.06694L2.13388 5H13.9583C14.3035 5 14.5833 5.27982 14.5833 5.625C14.5833 5.97018 14.3035 6.25 13.9583 6.25H2.13388L6.06694 10.1831C6.31102 10.4271 6.31102 10.8229 6.06694 11.0669C5.82286 11.311 5.42714 11.311 5.18306 11.0669L0.183058 6.06694C-0.0610194 5.82286 -0.0610194 5.42714 0.183058 5.18306L5.18306 0.183058C5.42714 -0.0610194 5.82286 -0.0610194 6.06694 0.183058Z"
+											fill="#CC312D"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
