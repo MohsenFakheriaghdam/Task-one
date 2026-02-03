@@ -70,8 +70,3 @@ This project was created as Task Two in an HTML & CSS bootcamp course, demonstra
 - Responsive design principles
 - Working with custom fonts and SVG assets
 - RTL (Right-to-Left) layout for Persian content
-
-## License
-
-This project is for educational purposes as part of a bootcamp assignment.</content>
-<parameter name="filePath">e:\HTML&CSS\Task-tow\README.md
